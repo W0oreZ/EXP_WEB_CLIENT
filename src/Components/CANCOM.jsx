@@ -19,11 +19,11 @@ export default class CANCOM extends Component {
 
   componentDidMount()
   {
-    const { client, subTopic, pubTopic } = this.state;
+    const { client, subTopic } = this.state;
 
     client.on("connect",()=>{
       addResponseMessage("Connected !");
-      console.log("connected to server");
+      console.log("connected to DACIA");
       client.subscribe(subTopic);
     })
 
