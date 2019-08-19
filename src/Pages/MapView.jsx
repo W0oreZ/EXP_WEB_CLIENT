@@ -10,6 +10,7 @@ import { Grid, Segment, Button } from 'semantic-ui-react';
 import CANCOM from './../Components/CANCOM.jsx';
 
 import "leaflet/dist/leaflet.css";
+import CAMERA from '../Components/CAMERA.jsx';
 
 export default class MapView extends Component {
 
@@ -141,6 +142,9 @@ export default class MapView extends Component {
             </Grid.Column>
             <Grid.Column width={12}>
               <Segment><h4>Camera View</h4></Segment>
+              <center>
+                <CAMERA />
+              </center>
             </Grid.Column>
           </Grid.Row>
         </Grid>
